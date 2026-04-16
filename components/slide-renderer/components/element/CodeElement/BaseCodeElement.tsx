@@ -574,7 +574,7 @@ export function BaseCodeElement({ elementInfo, animate }: BaseCodeElementProps) 
               color: '#24292e',
             }}
           >
-            <AnimatePresence initial={false} mode="popLayout">
+            <AnimatePresence initial={false} mode="sync">
               {lineHtmlMap.map((lineData, index) => {
                 const line = lines[index];
                 if (!line) return null;

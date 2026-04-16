@@ -928,7 +928,7 @@ function GenerationPreviewContent() {
             <div className="flex-1 flex flex-col items-center justify-center w-full space-y-8 mt-4">
               {/* Icon / Visualizer Container */}
               <div className="relative size-48 flex items-center justify-center">
-                <AnimatePresence mode="popLayout">
+                <AnimatePresence mode="wait">
                   {error ? (
                     <motion.div
                       key="error"

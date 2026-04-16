@@ -425,7 +425,7 @@ function ContentVisualizer() {
 
       {/* Main Content Container */}
       <div className="w-40 h-28 relative">
-        <AnimatePresence mode="popLayout">
+        <AnimatePresence mode="wait">
           <motion.div
             key={index}
             variants={variants}

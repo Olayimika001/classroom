@@ -357,7 +357,7 @@ const InteractiveWhiteboardCanvas = forwardRef<
 
         {/* Content layer — elements rendered at their raw coordinates */}
         <div className="absolute inset-0">
-          <AnimatePresence mode="popLayout">
+          <AnimatePresence mode="sync">
             {elements.map((element, index) => (
               <AnimatedElement
                 key={element.id}
